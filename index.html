@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    body .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      width: 90%;
+      background-color: lightblue;
+    }
+
+    .card {
+      background-color: white;
+      z-index: 1;
+      padding: 5px 5px 5px 5px;
+      width: 230px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+      height: auto;
+    }
+
+    .card img {
+      width: 95%;
+      height: 80%;
+    }
+
+    .card .heading {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      font-weight: bolder;
+    }
+
+    .card span {
+      font-size: small;
+    }
+
+    .card .attribution {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="images/image-qr-code.png" alt="QR Code" />
+      <div class="heading">Improve your front-end skills by building projects</div>
+
+      <span> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </span>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Aamir Abbas</a>.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
