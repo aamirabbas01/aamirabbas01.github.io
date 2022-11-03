@@ -15,18 +15,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
 
-Desktop : (./images/screenshot.jpg)
-Mobile Emulator in Chrome: (./images/screenshot-mobile-pixel5.jpg)
+Desktop : (images/screenshot.jpg)
+Mobile Emulator in Chrome: (images/screenshot-mobile-pixel5.jpg)
 
 ### Links
 
-- Solution URL:(https://https://github.com/aamirabbas01/aamirabbas01.github.io)
+- Solution URL:(https://github.com/aamirabbas01/aamirabbas01.github.io)
 - Live Site URL:(https://aamirabbas01.github.io)
 
 ## My process
@@ -56,7 +54,7 @@ After learning basic html and css as w3schools, I am learning Bootstrap 5 and wa
 
 ### Useful resources
 
-- [W3s School](https://www.w3school.com) - This helped me for getting basics of html and css. I really liked this pattern and will use it going forward.
+- [W3 School](https://www.w3schools.com/css/default.asp) - This helped me for getting basics of html and css. I really liked this pattern and will use it going forward.
 - [Stack Overflow](https://www.stackoverflow.com) - This is site that gives all the answers a coder faces in the daily development life.
 
 ## Author
