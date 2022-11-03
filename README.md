@@ -19,8 +19,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-Desktop : (images/screenshot.jpg)
-Mobile Emulator in Chrome: (images/screenshot-mobile-pixel5.jpg)
+- Desktop : (images/screenshot.jpg)
+- Mobile Emulator in Chrome: (images/screenshot-mobile-pixel5.jpg)
 
 ### Links
 
