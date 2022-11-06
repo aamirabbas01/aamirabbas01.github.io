@@ -136,6 +136,10 @@
       #imgWeb3 {
         content: url(assets/images/image-web-3-desktop.jpg);
       }
+
+      #divMenuClose {
+        display: none;
+      }
     }
 
     @media only screen and (max-width: 400px) {
@@ -169,6 +173,10 @@
         color: black;
       }
 
+      #divMenuClose {
+        display: block;
+      }
+
     }
   </style>
 </head>
@@ -185,7 +193,7 @@
           <span class="navbar-toggler-icon ms-auto"></span>
         </button>
         <div class="offcanvas offcanvas-end w-50 p-3" id="collapsibleNavbar">
-          <div class="d-lg-none d-sm-block text-end">
+          <div id="divMenuClose" class="text-end">
             <button type="button" class="btn-close text-reset fs-3" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
