@@ -19,7 +19,7 @@
     :root {
       --blue: hsl(240, 100%, 5%);
       --lightOrange: hsl(35, 77%, 62%);
-
+      --lightGray: hsl(212, 45%, 89%);
     }
 
     @font-face {
@@ -40,6 +40,7 @@
     body {
       font-family: interFontRegular;
       background-color: hsl(36, 100%, 99%);
+
     }
 
     body p {
@@ -47,19 +48,24 @@
       font-size: 15px;
       line-height: 1em;
       padding-bottom: 5px;
+      line-height: 2em;
     }
 
-    h1,
-    h6 {
+    h1 {
       font-family: interFontBolder;
     }
 
+    h6 {
+      font-family: interFontBolder;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
 
     .summary {
-      line-height: 1em;
       color: hsl(236, 13%, 42%);
       font-family: interFontRegular;
       font-size: 15px;
+      line-height: 2em;
     }
 
     .news {
@@ -78,6 +84,11 @@
       font-family: interFontBold;
       color: white;
       text-decoration: none;
+    }
+
+    .news .listHeading:hover {
+      font-family: interFontBold;
+      color: var(--lightGray);
     }
 
     .news .listHeading:focus {
@@ -114,14 +125,23 @@
       color: white;
     }
 
+    h3 {
+      color: var(--lightGray);
+      font-family: interFontBold;
+    }
 
-    /* @media (min-width: 768px) {
+
+    @media (min-width:768px) {
       .container {
         max-width: 70%;
       }
-    } */
 
-    @media only screen and (max-width: 768px) {
+      #imgWeb3 {
+        content: url(assets/images/image-web-3-desktop.jpg);
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
 
       .col-4,
       .col-5,
@@ -140,35 +160,56 @@
       }
 
       #imgWeb3 {
-        background-image: url(assets/images/image-web-3-mobile.jpg);
+        content: url(assets/images/image-web-3-mobile.jpg);
       }
+
+      #menu {
+        padding-top: 3em;
+      }
+
+      #menu a {
+        font-family: interFontBold;
+        color: black;
+      }
+
     }
   </style>
 </head>
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand bg-light">
+    <nav class="navbar navbar-expand-md bg-light">
       <div class="container">
+
         <a class="navbar-brand" href="#">
           <img src="assets/images/logo.svg" alt="News Logo" style="width:40px;">
         </a>
-        <!-- Links -->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">New</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trending</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Categories</a>
-          </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon ms-auto"></span>
+        </button>
+        <div class="offcanvas offcanvas-end w-50 p-3" id="collapsibleNavbar">
+          <div class="d-lg-none d-sm-block text-end">
+            <button type="button" class="btn-close text-reset fs-3" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <ul id="menu" class="navbar-nav ms-xl-auto ms-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -177,13 +218,14 @@
     <main role="main">
       <div class="row content">
         <div class="col-8">
-          <img id="imgWeb3" src="assets/images/image-web-3-desktop.jpg" alt="Web 3" class="img-fluid">
+          <img id="imgWeb3" alt="Web 3" class="img-fluid">
           <div class="row mt-2">
-            <div class="col-5 fw-bold">
+            <div class="col-4 fw-bold">
               <h1>The Bright Future of Web 3.0?</h1>
             </div>
-            <div class="col-7">
-              <p> We dive into the next evolution of the web that claims to put the power of the platforms back into
+            <div class="col-8">
+              <p> We dive into the next evolution of the web that claims to put the power of the platforms back
+                into
                 the
                 hands of the people. But is it really fulfilling its promise?</p>
 
@@ -214,7 +256,7 @@
             <div class="col-sm-4">
               <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs" class="img-fluid">
             </div>
-            <div class="col-sm-8 p-0">
+            <div class="col-sm-8">
               <h3>01</h3>
               <h6><a href="#" class="heading">Reviving Retro PCs</a></h6>
               <div class="summary">
@@ -223,24 +265,24 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 p-2">
           <div class="row">
             <div class="col-sm-4">
               <img src="assets/images/image-top-laptops.jpg" alt="Top Laptops" class="img-fluid">
             </div>
-            <div class="col-sm-8 p-0">
+            <div class="col-sm-8">
               <h3>02</h3>
               <h6><a href="#" class="heading">Top 10 Laptops of 2022</a></h6>
               <div class="summary"> Our best picks for various needs and budgets. </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 p-2">
           <div class="row">
             <div class="col-sm-4">
               <img src="assets/images/image-gaming-growth.jpg" alt="Gaming Growith" class="img-fluid">
             </div>
-            <div class="col-sm-8 p-0">
+            <div class="col-sm-8">
               <h3>03</h3>
               <h6><a href="#" class="heading">Growth of Gaming</a>
               </h6>
@@ -256,7 +298,7 @@
     <div class="container">
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Aamir Abbas</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/aamirabbas01">Aamir Abbas</a>.
       </div>
     </div>
   </footer>
